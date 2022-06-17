@@ -1,0 +1,30 @@
+{
+    "name": "gsu-dle/mysql-tools",
+    "description": "MySQL Toolkit",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "GAState\\Tools\\MySQL\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Melody Forest",
+            "email": "mforest@gsu.edu"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-mysqli": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.7",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-strict-rules": "^1.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
