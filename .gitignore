@@ -1,6 +1,4 @@
-# contains API keys
-/tests/Bootstrap.php
-
+coverage.xml
 composer.phar
 composer.lock
 /vendor/

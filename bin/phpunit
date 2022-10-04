@@ -1,0 +1,4 @@
+#!/bin/bash
+
+clear
+$(dirname "$0")/../vendor/bin/phpunit -v --bootstrap vendor/autoload.php tests
