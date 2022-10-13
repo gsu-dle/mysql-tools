@@ -27,5 +27,18 @@
         "allow-plugins": {
             "phpstan/extension-installer": true
         }
+    },
+    "scripts": {
+        "static-analysis": [
+            "phpstan clear-result-cache",
+            "phpstan analyse --level 9 src tests"
+        ],
+        "unit-tests": [
+            "phpunit --bootstrap vendor/autoload.php tests"
+        ],
+        "code-coverage": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit --coverage-clover coverage.xml --coverage-filter=src --bootstrap ./vendor/autoload.php tests"
+        ]
     }
 }

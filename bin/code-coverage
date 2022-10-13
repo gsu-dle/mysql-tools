@@ -1,6 +1,0 @@
-#!/bin/bash
-
-clear
-cd $(dirname "$0")/../
-env XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-clover coverage.xml --coverage-filter=src --bootstrap ./vendor/autoload.php tests
-#env XDEBUG_MODE=coverage ./vendor/bin/phpunit --verbose --coverage-text --coverage-filter=src --bootstrap ./vendor/autoload.php tests
